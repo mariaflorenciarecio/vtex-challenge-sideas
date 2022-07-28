@@ -1,0 +1,22 @@
+{
+  "name": "sideas",
+  "version": "1.0.0",
+  "description": "Implementación de Vtex StoreFramework para Sideas",
+  "repository": "",
+  "author": "Sideas",
+  "private": true,
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "prettier": "^2.6.0",
+    "pretty-quick": "^3.1.3",
+    "sass": "^1.54.0"
+  },
+  "scripts": {
+    "sass": "node_modules/.bin/sass --watch --no-source-map styles/scss:styles/css",
+    "sass-react": "concurrently \"sass --watch --no-source-map styles/scss:styles/css\" \"sass --watch --no-source-map react/styles:react\"",
+    "no-link:sass": "concurrently \"sass --watch --no-source-map styles/scss:styles/css\" \"sass --watch --no-source-map react/styles:react\""
+  },
+  "dependencies": {
+    "yarn": "^1.22.19"
+  }
+}
