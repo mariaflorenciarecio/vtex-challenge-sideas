@@ -1,0 +1,205 @@
+{
+  "store.custom#landing-promocional": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.mobile"
+    ]
+  },
+
+  "responsive-layout.desktop": {
+    "children": [
+      "list-context.image-list#promocional",
+      "flex-layout.row#beneficios",
+      "flex-layout.row#descuentos"
+    ]
+  },
+
+  "responsive-layout.mobile": {
+    "children": [
+      "list-context.image-list#promocional",
+      "flex-layout.row#beneficios",
+      "image#equipo",
+      "flex-layout.row#descuentos"
+    ]
+  },
+
+  "list-context.image-list#promocional": {
+    "children": ["slider-layout#promocional"],
+    "props": {
+      "height": 489,
+      "images": [
+        {
+          "alt": "Logo Sideas Group",
+          "image": "https://sideas.vtexassets.com/arquivos/banner-promocional-desktop-1.png",
+          "mobileImage": "https://sideas.vtexassets.com/arquivos/banner-promocional-mobile-1.png",
+          "description": "Logo Sideas Group",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "alt": "Logo Sideas Group",
+          "image": "https://sideas.vtexassets.com/arquivos/banner-promocional-desktop-1.png",
+          "mobileImage": "https://sideas.vtexassets.com/arquivos/banner-promocional-mobile-1.png",
+          "description": "Logo Sideas Group",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "alt": "Logo Sideas Group",
+          "image": "https://sideas.vtexassets.com/arquivos/banner-promocional-desktop-1.png",
+          "mobileImage": "https://sideas.vtexassets.com/arquivos/banner-promocional-mobile-1.png",
+          "description": "Logo Sideas Group",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "alt": "Logo Sideas Group",
+          "image": "https://sideas.vtexassets.com/arquivos/banner-promocional-desktop-1.png",
+          "mobileImage": "https://sideas.vtexassets.com/arquivos/banner-promocional-mobile-1.png",
+          "description": "Logo Sideas Group",
+          "link": {
+            "url": "/"
+          }
+        },
+        {
+          "alt": "Logo Sideas Group",
+          "image": "https://sideas.vtexassets.com/arquivos/banner-promocional-desktop-1.png",
+          "mobileImage": "https://sideas.vtexassets.com/arquivos/banner-promocional-mobile-1.png",
+          "description": "Logo Sideas Group",
+          "link": {
+            "url": "/"
+          }
+        }
+      ]
+    }
+  },
+
+  "slider-layout#promocional": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "infinite": false,
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "blockClass": "promocional"
+    }
+  },
+
+  "flex-layout.row#beneficios": {
+    "children": [
+      "rich-text#beneficios"
+    ]
+  },
+
+  "image#equipo": {
+    "props": {
+      "alt": "Equipo Sideas Group",
+      "src": "https://sideas.vtexassets.com/arquivos/equipo.png",
+      "description": "Equipo Sideas Group",
+      "link": {
+        "url": "/"
+      }
+    }
+  },
+
+  "rich-text#beneficios": {
+    "props": {
+      "text": "# **Beneficios para que compres tus productos**\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type"
+    }
+  },
+
+  "flex-layout.row#descuentos": {
+    "children": [
+      "rich-text#descuentos",
+      "list-context.product-list#descuentos"
+    ]
+  },
+
+  "rich-text#descuentos": {
+    "props": {
+      "text": "Descuentos"
+    }
+  },
+
+  "list-context.product-list#descuentos": {
+    "blocks": ["product-summary.shelf#descuentos"],
+    "children": ["slider-layout#descuentos"]
+  },
+
+  "product-summary.shelf#descuentos": {
+    "children": [
+        "product-summary-image#descuentos",
+        "product-summary-sku-selector#descuentos",
+        "product-summary-brand#descuentos",
+        "product-summary-name#descuentos",
+        "product-summary-price#descuentos",
+        "product-summary-buy-button#descuentos"
+    ]
+  },
+
+  "slider-layout#descuentos": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "infinite": true,
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "showPaginationDots": "mobileOnly"
+    }
+  },
+
+  "product-summary-image#descuentos": {
+    "props": {
+      "showBadge": false
+    }
+  },
+
+  "product-summary-sku-selector#descuentos": {
+    "props": {
+      "disableUnavailableSelectOptions": true,
+      "displayMode": "slider",
+      "imageHeight": 48,
+      "imageWidth": 48,
+      "showVariationsLabels": "none"
+    }
+  },
+
+  "product-summary-brand#descuentos": {
+    "props": {
+      
+    }
+  },
+
+  "product-summary-name#descuentos": {
+    "props": {
+      
+    }
+  },
+
+  "product-summary-price#descuentos": {
+    "props": {
+      
+    }
+  },
+
+  "product-summary-buy-button#descuentos": {
+    "props": {
+      
+    }
+  }
+}
