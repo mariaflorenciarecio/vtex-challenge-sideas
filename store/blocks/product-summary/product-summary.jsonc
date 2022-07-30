@@ -86,5 +86,75 @@
       ],
       "blockClass": "summary"
     }
+  },
+
+  // PRODUCT SUMMARY DESCUENTOS
+
+  "product-summary.shelf#descuentos": {
+    "children": [
+        "product-summary-image#descuentos",
+        "flex-layout.col#descuentos"
+    ],
+    "props": {
+      "blockClass": "descuentos"
+    }
+  },
+
+  "product-summary-image#descuentos": {
+    "props": {
+      "showBadge": false,
+      "blockClass": "descuentos"
+    }
+  },
+
+  "flex-layout.col#descuentos": {
+    "children": [
+      "product-summary-sku-selector#descuentos",
+      "product-summary-brand#descuentos",
+      "product-summary-name#descuentos",
+      "product-summary-price#descuentos",
+      "add-to-cart-button#descuentos"
+    ],
+    "props": {
+      "blockClass": "descuentos"
+    }
+  },
+
+  "product-summary-sku-selector#descuentos": {
+    "props": {
+      "disableUnavailableSelectOptions": true,
+      "displayMode": "slider",
+      "imageHeight": 48,
+      "imageWidth": 48,
+      "showVariationsLabels": "none",
+      "blockClass": "descuentos"
+    }
+  },
+
+  "product-summary-brand#descuentos": {
+    "props": {
+      "blockClass": "descuentos"
+    }
+  },
+
+  "product-summary-name#descuentos": {
+    "props": {
+      "blockClass": "descuentos"
+    }
+  },
+
+  "product-summary-price#descuentos": {
+    "props": {
+      "showLabels": false,
+      "blockClass": "descuentos"
+    }
+  },
+
+  "add-to-cart-button#descuentos": {
+    "props": {
+      "text": "Comprar ahora",
+      "onClickBehavior": "go-to-product-page",
+      "blockClass": "descuentos"
+    }
   }
 }

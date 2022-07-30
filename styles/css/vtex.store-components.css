@@ -110,3 +110,11 @@
 .image {
   image-rendering: -webkit-optimize-contrast;
 }
+
+.skuSelectorNameContainer, .skuSelectorTextContainer {
+  margin: 0;
+}
+
+.skuSelectorSubcontainer--color {
+  margin-bottom: 0;
+}

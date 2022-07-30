@@ -97,7 +97,10 @@
   "flex-layout.row#beneficios": {
     "children": [
       "rich-text#beneficios"
-    ]
+    ],
+    "props": {
+      "blockClass": "beneficios"
+    }
   },
 
   "image#equipo": {
@@ -113,7 +116,8 @@
 
   "rich-text#beneficios": {
     "props": {
-      "text": "# **Beneficios para que compres tus productos**\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type"
+      "text": "# Beneficios para que compres tus productos\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+      "blockClass": "beneficios"
     }
   },
 
@@ -121,7 +125,10 @@
     "children": [
       "rich-text#descuentos",
       "list-context.product-list#descuentos"
-    ]
+    ],
+    "props": {
+      "blockClass": "descuentos"
+    }
   },
 
   "rich-text#descuentos": {
@@ -133,17 +140,6 @@
   "list-context.product-list#descuentos": {
     "blocks": ["product-summary.shelf#descuentos"],
     "children": ["slider-layout#descuentos"]
-  },
-
-  "product-summary.shelf#descuentos": {
-    "children": [
-        "product-summary-image#descuentos",
-        "product-summary-sku-selector#descuentos",
-        "product-summary-brand#descuentos",
-        "product-summary-name#descuentos",
-        "product-summary-price#descuentos",
-        "product-summary-buy-button#descuentos"
-    ]
   },
 
   "slider-layout#descuentos": {
@@ -159,47 +155,8 @@
         "timeout": 3000,
         "stopOnHover": true
       },
-      "showPaginationDots": "mobileOnly"
-    }
-  },
-
-  "product-summary-image#descuentos": {
-    "props": {
-      "showBadge": false
-    }
-  },
-
-  "product-summary-sku-selector#descuentos": {
-    "props": {
-      "disableUnavailableSelectOptions": true,
-      "displayMode": "slider",
-      "imageHeight": 48,
-      "imageWidth": 48,
-      "showVariationsLabels": "none"
-    }
-  },
-
-  "product-summary-brand#descuentos": {
-    "props": {
-      
-    }
-  },
-
-  "product-summary-name#descuentos": {
-    "props": {
-      
-    }
-  },
-
-  "product-summary-price#descuentos": {
-    "props": {
-      
-    }
-  },
-
-  "product-summary-buy-button#descuentos": {
-    "props": {
-      
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "descuentos"
     }
   }
 }

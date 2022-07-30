@@ -1,4 +1,5 @@
-.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
   border-radius: 50%;
 }
 
@@ -39,4 +40,111 @@
 
 .image {
   border-radius: 0.25rem;
+}
+
+// PRODUCT SUMMARY DESCUENTOS
+
+.container--descuentos {
+  max-width: 330px !important;
+  margin: 0;
+
+  .element--descuentos {
+    padding: 0;
+  }
+
+  .imageWrapper--descuentos {
+    width: 330px;
+    height: 300px;
+
+    .image--descuentos {
+      width: 330px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
+}
+
+.buyButton--descuentos {
+  background-color: #ffffff;
+}
+
+.frameAround--descuentos {
+  display: none;
+}
+
+.skuSelectorContainer--descuentos {
+  margin: 0 !important;
+
+  :global(.vtex-store-components-3-x-skuSelectorOptionsList) {
+    gap: 4px;
+    margin: 0;
+  }
+}
+
+.skuSelectorItem--descuentos {
+  margin: 0;
+}
+
+.productBrandName--descuentos {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #939598;
+}
+
+.productBrand--descuentos {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #1A1A1A;
+}
+
+.priceContainer--descuentos {
+  float: left;
+  padding: 0;
+  margin-bottom: 34px;
+}
+
+.productPriceClass--descuentos {
+  gap: 4px;
+
+  .listPriceContainer--descuentos {
+    padding: 0;
+
+    .listPrice--descuentos {
+      padding: 0;
+    }
+    
+    .currencyContainer--descuentos {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      color: #969696;
+    }
+  }
+}
+
+.sellingPrice--descuentos {
+  padding: 0 !important;
+
+  .currencyContainer--descuentos {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #1A1A1A;
+  }
+}
+
+.nameContainer--descuentos {
+  padding: 0;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }

@@ -94,3 +94,55 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexRow--beneficios {
+  margin: 96px 0 67px 0;
+}
+@media screen and (max-width: 768px) {
+  .flexRow--beneficios {
+    margin: 83px 0 61px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flexRow--descuentos {
+    margin-bottom: 96px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .flexRow--descuentos .stretchChildrenWidth:first-child {
+    width: 32.6% !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .flexRow--descuentos .stretchChildrenWidth:last-child {
+    width: 67.4% !important;
+  }
+}
+
+.flexCol--descuentos {
+  padding: 38px 16px 16px 16px;
+}
+.flexCol--descuentos .flexColChild--descuentos:first-child {
+  margin-bottom: 16px;
+  min-height: 48px !important;
+}
+
+.flexColChild--descuentos :global(.vtex-button) {
+  background-color: #ffffff;
+  border: 1px solid #FF9401;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 8px;
+}
+.flexColChild--descuentos :global(.vtex-button):hover {
+  background-color: #FF9401;
+}
+.flexColChild--descuentos :global(.vtex-button):hover :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  color: #FFFFFF;
+}
+.flexColChild--descuentos :global(.vtex-button) :global(.vtex-button__label) {
+  padding: 0 !important;
+}

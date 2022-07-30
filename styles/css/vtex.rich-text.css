@@ -85,3 +85,37 @@
     line-height: 1.3em;
   }
 }
+.heading--beneficios {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: #333333;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .heading--beneficios {
+    font-size: 18px;
+    text-align: center;
+    width: 372px;
+    margin: 0;
+  }
+}
+
+.paragraph--beneficios {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4B4C4D;
+  width: 1002px;
+  margin: 35px 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  .paragraph--beneficios {
+    font-size: 16px;
+    text-align: center;
+    width: 372px;
+    margin: 28px 0 0 0;
+  }
+}
