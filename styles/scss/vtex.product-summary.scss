@@ -47,13 +47,14 @@
 .container--descuentos {
   max-width: 330px !important;
   margin: 0;
-
+  border: 1px solid #D1D2D4;
+  border-radius: 8px;
+  
   .element--descuentos {
     padding: 0;
   }
 
   .imageWrapper--descuentos {
-    width: 330px;
     height: 300px;
 
     .image--descuentos {
@@ -130,6 +131,10 @@
   }
 }
 
+.sellingPriceContainer--descuentos {
+  padding: 0;
+}
+
 .sellingPrice--descuentos {
   padding: 0 !important;
 
@@ -144,7 +149,7 @@
 }
 
 .nameContainer--descuentos {
-  padding: 0;
+  padding: 0 !important;
   margin-top: 4px;
   margin-bottom: 8px;
 }

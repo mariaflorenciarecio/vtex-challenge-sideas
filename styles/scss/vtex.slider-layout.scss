@@ -121,9 +121,11 @@
 // PRODUCT SUMMARY DESCUENTOS
 
 .slide--descuentos {
-  border: 1px solid #D1D2D4;
-  border-radius: 8px;
   max-width: 330px !important;
+}
+
+.sliderTrack--descuentos {
+  gap: 1rem;
 }
 
 // arrows

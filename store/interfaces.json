@@ -1,0 +1,8 @@
+{
+  "wishlist-button": {
+    "component": "WishlistButton"
+  },
+  "timer-countdown": {
+    "component": "TimerCountdown"
+  }
+}

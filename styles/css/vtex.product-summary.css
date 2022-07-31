@@ -44,12 +44,13 @@
 .container--descuentos {
   max-width: 330px !important;
   margin: 0;
+  border: 1px solid #D1D2D4;
+  border-radius: 8px;
 }
 .container--descuentos .element--descuentos {
   padding: 0;
 }
 .container--descuentos .imageWrapper--descuentos {
-  width: 330px;
   height: 300px;
 }
 .container--descuentos .imageWrapper--descuentos .image--descuentos {
@@ -120,6 +121,10 @@
   color: #969696;
 }
 
+.sellingPriceContainer--descuentos {
+  padding: 0;
+}
+
 .sellingPrice--descuentos {
   padding: 0 !important;
 }
@@ -133,7 +138,7 @@
 }
 
 .nameContainer--descuentos {
-  padding: 0;
+  padding: 0 !important;
   margin-top: 4px;
   margin-bottom: 8px;
 }

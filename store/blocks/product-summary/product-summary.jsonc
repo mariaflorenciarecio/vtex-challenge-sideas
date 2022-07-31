@@ -150,6 +150,12 @@
     }
   },
 
+  "wishlist-button#descuentos": {
+    "props": {
+      "AddListenBtn": "add-to-list-btn"
+    }
+  },
+
   "add-to-cart-button#descuentos": {
     "props": {
       "text": "Comprar ahora",

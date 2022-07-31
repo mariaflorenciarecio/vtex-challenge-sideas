@@ -10,16 +10,16 @@
     "children": [
       "list-context.image-list#promocional",
       "flex-layout.row#beneficios",
-      "flex-layout.row#descuentos"
+      "flex-layout.row#discounts"
     ]
   },
-
+  
   "responsive-layout.mobile": {
     "children": [
       "list-context.image-list#promocional",
       "flex-layout.row#beneficios",
       "image#equipo",
-      "flex-layout.row#descuentos"
+      "flex-layout.row#discounts"
     ]
   },
 
@@ -121,19 +121,13 @@
     }
   },
 
-  "flex-layout.row#descuentos": {
+  "flex-layout.row#discounts": {
     "children": [
-      "rich-text#descuentos",
+      "countdown",
       "list-context.product-list#descuentos"
     ],
     "props": {
       "blockClass": "descuentos"
-    }
-  },
-
-  "rich-text#descuentos": {
-    "props": {
-      "text": "Descuentos"
     }
   },
 
@@ -152,7 +146,7 @@
       "showNavigationArrows": "desktopOnly",
       "infinite": true,
       "autoplay": {
-        "timeout": 3000,
+        "timeout": 2500,
         "stopOnHover": true
       },
       "showPaginationDots": "mobileOnly",
