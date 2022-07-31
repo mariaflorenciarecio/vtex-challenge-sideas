@@ -1,5 +1,7 @@
+@import 'VARS.scss';
+
 .container--deals {
-  color: #ffffff;
+  color: $white;
   text-align: center;
   justify-content: center;
 }
@@ -91,17 +93,22 @@
 
 // RICH TEXT BENEFICIOS
 
+.container--beneficios {
+  justify-content: center;
+}
+
 // title
 
 .heading--beneficios {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat;
+  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 32px;
   color: #333333;
   margin: 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $mobile) {
     font-size: 18px;
     text-align: center;
     width: 372px;
@@ -112,15 +119,16 @@
 // paragraph
 
 .paragraph--beneficios {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #4B4C4D;
+  color: $dark-gray;
   width: 1002px;
   margin: 35px 0 0 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $mobile) {
     font-size: 16px;
     text-align: center;
     width: 372px;

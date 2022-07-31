@@ -31,7 +31,7 @@
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 14px;
 }
 
@@ -132,7 +132,7 @@
 }
 
 .flexColChild--descuentos :global(.vtex-button) {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border: 1px solid #FF9401;
   border-radius: 24px;
   justify-content: center;

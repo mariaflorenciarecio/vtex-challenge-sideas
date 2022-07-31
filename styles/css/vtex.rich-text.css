@@ -1,5 +1,5 @@
 .container--deals {
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center;
   justify-content: center;
 }
@@ -85,8 +85,13 @@
     line-height: 1.3em;
   }
 }
+.container--beneficios {
+  justify-content: center;
+}
+
 .heading--beneficios {
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 32px;
@@ -104,6 +109,7 @@
 
 .paragraph--beneficios {
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;

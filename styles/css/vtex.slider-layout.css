@@ -30,11 +30,14 @@
   min-height: 550px;
 }
 
-.paginationDotsContainer--promocional {
+.paginationDotsContainer--promocional, .paginationDotsContainer--descuentos {
   align-items: center;
-  bottom: -29px;
   margin: 0;
   gap: 10px;
+}
+
+.paginationDotsContainer--promocional {
+  bottom: -29px;
 }
 @media screen and (max-width: 768px) {
   .paginationDotsContainer--promocional {
@@ -42,69 +45,58 @@
   }
 }
 
-.paginationDot--promocional {
+.paginationDotsContainer--descuentos {
+  bottom: -54px;
+}
+
+.paginationDot--promocional, .paginationDot--descuentos {
   height: 12px !important;
   width: 12px !important;
   margin: 0;
 }
 
-.paginationDot--promocional--isActive {
+.paginationDot--promocional--isActive, .paginationDot--descuentos--isActive {
   height: 15px !important;
   width: 15px !important;
   background-color: #000000;
 }
 
-.sliderRightArrow--promocional {
+.sliderArrows--promocional {
   margin: 0;
-  padding: 29px 15px 29px 23.9px;
   background-color: #FFFFFF !important;
   opacity: 0.95;
-  box-shadow: -2px 0px 4px 0px rgba(75, 76, 77, 0.1);
-  border-radius: 12px 0 0 12px;
 }
-.sliderRightArrow--promocional::after {
+.sliderArrows--promocional::after {
   content: "";
   background-image: url("https://sideas.vtexassets.com/arquivos/arrow.svg");
   width: 17.11px;
   height: 30px;
   filter: brightness(0) saturate(100%) invert(78%) sepia(37%) saturate(7054%) hue-rotate(357deg) brightness(100%) contrast(104%);
 }
-.sliderRightArrow--promocional:disabled {
+.sliderArrows--promocional:disabled {
   opacity: 0.5;
 }
-.sliderRightArrow--promocional:disabled::after {
+.sliderArrows--promocional:disabled::after {
   filter: invert(95%) sepia(4%) saturate(83%) hue-rotate(182deg) brightness(87%) contrast(96%);
   opacity: 0.5;
 }
-.sliderRightArrow--promocional .caretIcon--promocional {
+.sliderArrows--promocional .caretIcon--promocional {
   width: 0;
 }
 
+.sliderRightArrow--promocional {
+  padding: 29px 15px 29px 23.9px;
+  box-shadow: -2px 0px 4px 0px rgba(75, 76, 77, 0.1);
+  border-radius: 12px 0 0 12px;
+}
+
 .sliderLeftArrow--promocional {
-  margin: 0;
   padding: 29px 19px 29px 19.9px;
-  background-color: #FFFFFF !important;
-  opacity: 0.95;
   box-shadow: 2px 0px 4px 0px rgba(75, 76, 77, 0.1);
   border-radius: 0 12px 12px 0;
 }
 .sliderLeftArrow--promocional::after {
-  content: "";
-  background-image: url("https://sideas.vtexassets.com/arquivos/arrow.svg");
-  width: 17.11px;
-  height: 30px;
   transform: rotate(180deg);
-  filter: brightness(0) saturate(100%) invert(78%) sepia(37%) saturate(7054%) hue-rotate(357deg) brightness(100%) contrast(104%);
-}
-.sliderLeftArrow--promocional:disabled {
-  opacity: 0.5;
-}
-.sliderLeftArrow--promocional:disabled::after {
-  filter: invert(95%) sepia(4%) saturate(83%) hue-rotate(182deg) brightness(87%) contrast(96%);
-  opacity: 0.5;
-}
-.sliderLeftArrow--promocional .caretIcon--promocional {
-  width: 0;
 }
 
 .slide--descuentos {
@@ -115,62 +107,34 @@
   gap: 1rem;
 }
 
-.sliderLeftArrow--descuentos {
+.sliderArrows--descuentos {
   margin: 0;
-  padding: 15.5px 13.25px 15.5px 12.5px;
   background-color: #333333 !important;
-  box-shadow: 2px 0px 4px rgba(75, 76, 77, 0.1);
   border-radius: 28px;
+}
+.sliderArrows--descuentos::after {
+  content: "";
+  background-image: url("https://sideas.vtexassets.com/arquivos/arrow.svg");
+  color: #FFFFFF;
+  width: 14.25px;
+  height: 25px;
+  background-size: cover;
+}
+.sliderArrows--descuentos .caretIcon--descuentos {
+  width: 0;
+}
+
+.sliderLeftArrow--descuentos {
+  padding: 15.5px 13.25px 15.5px 12.5px;
+  box-shadow: 2px 0px 4px rgba(75, 76, 77, 0.1);
   left: -12px;
 }
 .sliderLeftArrow--descuentos::after {
-  content: "";
-  background-image: url("https://sideas.vtexassets.com/arquivos/arrow.svg");
-  color: #FFFFFF;
-  width: 14.25px;
-  height: 25px;
   transform: rotate(180deg);
-  background-size: cover;
-}
-.sliderLeftArrow--descuentos .caretIcon--descuentos {
-  width: 0;
 }
 
 .sliderRightArrow--descuentos {
-  margin: 0;
   padding: 15.5px 12.5px 15.5px 13.25px;
-  background-color: #333333 !important;
   box-shadow: -2px 0px 4px rgba(75, 76, 77, 0.1);
-  border-radius: 28px;
   right: -13px;
-}
-.sliderRightArrow--descuentos::after {
-  content: "";
-  background-image: url("https://sideas.vtexassets.com/arquivos/arrow.svg");
-  color: #FFFFFF;
-  width: 14.25px;
-  height: 25px;
-  background-size: cover;
-}
-.sliderRightArrow--descuentos .caretIcon--descuentos {
-  width: 0;
-}
-
-.paginationDotsContainer--descuentos {
-  align-items: center;
-  bottom: -54px;
-  margin: 0;
-  gap: 10px;
-}
-
-.paginationDot--descuentos {
-  height: 12px !important;
-  width: 12px !important;
-  margin: 0;
-}
-
-.paginationDot--descuentos--isActive {
-  height: 15px !important;
-  width: 15px !important;
-  background-color: #000000;
 }

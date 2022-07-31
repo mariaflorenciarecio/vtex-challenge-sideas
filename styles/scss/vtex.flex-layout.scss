@@ -1,3 +1,5 @@
+@import 'VARS.scss';
+
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
@@ -33,7 +35,7 @@
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
-  color: #ffffff;
+  color: $white;
   font-size: 14px;
 }
 
@@ -102,7 +104,7 @@
 .flexRow--beneficios {
   margin: 96px 0 67px 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $mobile) {
     margin: 83px 0 61px 0;
   }
 }
@@ -112,18 +114,18 @@
 .flexRow--descuentos {
   margin-bottom: 40px;
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $mobile) {
     margin-bottom: 96px;
   }
 
   .stretchChildrenWidth {
     &:first-child {
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: $desktop) {
         width: 32.60% !important;
       }
     }
     &:last-child {
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: $desktop) {
         width: 67.40% !important;
       }
     }
@@ -143,8 +145,8 @@
 
 .flexColChild--descuentos {
   :global(.vtex-button) {
-    background-color: #ffffff;
-    border: 1px solid #FF9401;
+    background-color: $white;
+    border: 1px solid $orange;
     border-radius: 24px;
     justify-content: center;
     align-items: center;
@@ -152,10 +154,10 @@
     gap: 8px;
 
     &:hover {
-      background-color: #FF9401;
+      background-color: $orange;
       
       :global(.vtex-add-to-cart-button-0-x-buttonText) {
-        color: #FFFFFF; 
+        color: $white; 
       }
     }
 

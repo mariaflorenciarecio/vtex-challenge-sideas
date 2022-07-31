@@ -1,11 +1,13 @@
+@import 'VARS.scss';
+
 // FLEX LAYOUT DESCUENTOS
 
 .buttonText--descuentos {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #FF9401;
+  color: $orange;
   text-transform: initial;
 }

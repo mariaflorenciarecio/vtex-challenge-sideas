@@ -1,9 +1,11 @@
+@import 'VARS.scss';
+
 // PRODUCT SUMMARY DESCUENTOS
 
 :global(.vtex-product-summary-2-x-skuSelectorInternalBox--descuentos) {
   
   :global(.absolute) {
-    border: 1px solid #D1D2D4;
+    border: 1px solid $ligth-gray;
     border-radius: 4px;
   }
 }
@@ -11,7 +13,7 @@
 :global(.vtex-product-summary-2-x-skuSelectorItem--descuentos--selected) {
 
   :global(.absolute) {
-    border: 1px solid #000000;
+    border: 1px solid $black;
     border-radius: 4px;
   }
 }
