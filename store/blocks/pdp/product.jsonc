@@ -140,6 +140,12 @@
     "children": ["add-to-cart-button"]
   },
 
+  "wishlist-button#descuentos": {
+    "props": {
+      "AddListenBtn": "add-to-list-btn"
+    }
+  },
+
   "flex-layout.row#product-availability": {
     "props": {
       "colGap": 7,

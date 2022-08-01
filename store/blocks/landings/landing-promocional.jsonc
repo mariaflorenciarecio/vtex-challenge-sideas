@@ -103,6 +103,13 @@
     }
   },
 
+  "rich-text#beneficios": {
+    "props": {
+      "text": "# Beneficios para que compres tus productos\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
+      "blockClass": "beneficios"
+    }
+  },
+
   "image#equipo": {
     "props": {
       "alt": "Equipo Sideas Group",
@@ -111,13 +118,6 @@
       "link": {
         "url": "/"
       }
-    }
-  },
-
-  "rich-text#beneficios": {
-    "props": {
-      "text": "# Beneficios para que compres tus productos\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type",
-      "blockClass": "beneficios"
     }
   },
 
@@ -144,7 +144,7 @@
         "phone": 1
       },
       "showNavigationArrows": "desktopOnly",
-      "infinite": false,
+      "infinite": true,
       "autoplay": {
         "timeout": 2500,
         "stopOnHover": true
