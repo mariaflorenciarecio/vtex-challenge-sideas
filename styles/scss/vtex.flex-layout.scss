@@ -103,9 +103,11 @@
 
 .flexRow--beneficios {
   margin: 96px 0 67px 0;
+  padding-left: 36px;
 
   @media screen and (max-width: $mobile) {
     margin: 83px 0 61px 0;
+    padding-left: 0;
   }
 }
 
@@ -113,20 +115,23 @@
 
 .flexRow--descuentos {
   margin-bottom: 40px;
-  
+  padding-left: 66px;
+  padding-right: 52px;
+
   @media screen and (max-width: $mobile) {
     margin-bottom: 96px;
+    padding: 0;
   }
 
   .stretchChildrenWidth {
     &:first-child {
       @media screen and (min-width: $desktop) {
-        width: 32.60% !important;
+        width: 29.60% !important;
       }
     }
     &:last-child {
       @media screen and (min-width: $desktop) {
-        width: 67.40% !important;
+        width: 70.40% !important;
       }
     }
   }
@@ -164,5 +169,11 @@
     :global(.vtex-button__label) {
       padding: 0 !important;
     }
+  }
+}
+
+.flexRowContent--descuentos {
+  .stretchChildrenWidth {
+    justify-content: left;
   }
 }

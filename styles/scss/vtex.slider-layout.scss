@@ -121,6 +121,10 @@
 
 .sliderTrack--descuentos {
   gap: 1rem;
+
+  @media screen and (max-width: $mobile) {
+    gap: 0;
+  }
 }
 
 // arrows
@@ -147,7 +151,11 @@
 .sliderLeftArrow--descuentos {
   padding: 15.50px 13.25px 15.50px 12.50px;
   box-shadow: 2px 0px 4px rgba(75, 76, 77, 0.1);
-  left: -12px;
+  left: -16px;
+
+  @media screen and (min-width: 1572px) {
+    left: -8px;
+  }
 
   &::after {
     transform: rotate(180deg);
@@ -157,5 +165,9 @@
 .sliderRightArrow--descuentos {
   padding: 15.50px 12.50px 15.50px 13.25px;
   box-shadow: -2px 0px 4px rgba(75, 76, 77, 0.1);
-  right: -13px;
+  right: -19px;
+
+  @media screen and (min-width: 1572px) {
+    right: -11px;
+  }
 }

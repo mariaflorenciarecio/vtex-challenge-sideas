@@ -144,7 +144,7 @@
         "phone": 1
       },
       "showNavigationArrows": "desktopOnly",
-      "infinite": true,
+      "infinite": false,
       "autoplay": {
         "timeout": 2500,
         "stopOnHover": true

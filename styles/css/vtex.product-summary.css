@@ -50,9 +50,6 @@
 .container--descuentos .element--descuentos {
   padding: 0;
 }
-.container--descuentos .imageWrapper--descuentos {
-  height: 300px;
-}
 .container--descuentos .imageWrapper--descuentos .image--descuentos {
   width: 330px;
   max-height: 300px;

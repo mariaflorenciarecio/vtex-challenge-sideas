@@ -94,7 +94,9 @@
 // RICH TEXT BENEFICIOS
 
 .container--beneficios {
-  justify-content: center;
+  @media screen and (max-width: $mobile) {
+    justify-content: center;
+  }
 }
 
 // title
